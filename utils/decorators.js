@@ -1,0 +1,32 @@
+export const decorators = [
+    {
+      id: 1,
+      name: 'Sarah Johnson',
+      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400',
+      speciality: 'Modern & Contemporary',
+      experience: '8 years',
+      rating: 4.9,
+      projects: 127,
+      description: 'Specializes in creating sleek, modern spaces with clean lines and functional design.',
+    },
+    {
+      id: 2,
+      name: 'Michael Chen',
+      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
+      speciality: 'Luxury & Classic',
+      experience: '12 years',
+      rating: 4.8,
+      projects: 203,
+      description: 'Expert in luxury interiors with a focus on timeless elegance and premium materials.',
+    },
+    {
+      id: 3,
+      name: 'Emma Davis',
+      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400',
+      speciality: 'Scandinavian & Minimalist',
+      experience: '6 years',
+      rating: 4.7,
+      projects: 89,
+      description: 'Creates serene, minimalist spaces inspired by Scandinavian design principles.',
+    },
+  ];
