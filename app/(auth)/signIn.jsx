@@ -59,7 +59,7 @@ export default function LoginScreen() {
           style={styles.keyboardView}
         >
           <View style={styles.overlay}>
-            {/* Header */}
+       
             <Animated.View entering={FadeInDown.delay(200)} style={styles.header}>
               <TouchableOpacity style={styles.backButton} onPress={handleBack}>
                 <ArrowLeft size={24} color="#FFFFFF" />
@@ -71,7 +71,7 @@ export default function LoginScreen() {
               <View style={styles.placeholder} />
             </Animated.View>
 
-            {/* Login Form */}
+        
             <View style={styles.formContainer}>
               <Animated.View entering={FadeInUp.delay(400)} style={styles.formCard}>
                 <View style={styles.formHeader}>
@@ -80,7 +80,7 @@ export default function LoginScreen() {
                 </View>
 
                 <View style={styles.form}>
-                  {/* Email Input */}
+            
                   <Animated.View entering={FadeInUp.delay(600)} style={styles.inputContainer}>
                     <Mail size={20} color="#6B7280" style={styles.inputIcon} />
                     <TextInput
@@ -94,7 +94,7 @@ export default function LoginScreen() {
                     />
                   </Animated.View>
 
-                  {/* Password Input */}
+           
                   <Animated.View entering={FadeInUp.delay(700)} style={styles.inputContainer}>
                     <Lock size={20} color="#6B7280" style={styles.inputIcon} />
                     <TextInput
@@ -117,14 +117,13 @@ export default function LoginScreen() {
                     </TouchableOpacity>
                   </Animated.View>
 
-                  {/* Forgot Password */}
                   <Animated.View entering={FadeInUp.delay(800)} style={styles.forgotContainer}>
                     <TouchableOpacity onPress={handleForgotPassword}>
                       <Text style={styles.forgotText}>Forgot Password?</Text>
                     </TouchableOpacity>
                   </Animated.View>
 
-                  {/* Login Button */}
+             
                   <Animated.View entering={FadeInUp.delay(900)} style={styles.loginButtonContainer}>
                     <TouchableOpacity 
                       style={[styles.loginButton, isLoading && styles.loginButtonDisabled]} 
@@ -143,7 +142,7 @@ export default function LoginScreen() {
                     </TouchableOpacity>
                   </Animated.View>
 
-                  {/* Sign Up Link */}
+            
                   <Animated.View entering={FadeInUp.delay(1000)} style={styles.signupContainer}>
                     <Text style={styles.signupText}>Don't have an account? </Text>
                     <TouchableOpacity onPress={handleSignUp}>
@@ -153,7 +152,7 @@ export default function LoginScreen() {
                 </View>
               </Animated.View>
 
-              {/* Bottom Features */}
+        
               <Animated.View entering={FadeInUp.delay(1100)} style={styles.features}>
                 <View style={styles.feature}>
                   <Text style={styles.featureNumber}>500+</Text>

@@ -36,13 +36,13 @@ export default function QuoteScreen() {
   });
 
   const handleSubmit = () => {
-    // Basic validation
+ 
     if (!formData.name || !formData.email || !formData.phone || !formData.serviceType) {
       Alert.alert('Error', 'Please fill in all required fields');
       return;
     }
 
-    // Simulate form submission
+
     Alert.alert(
       'Quote Request Submitted',
       'Thank you for your interest! Our team will review your request and get back to you within 24 hours.',
@@ -53,15 +53,15 @@ export default function QuoteScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
-        {/* Header */}
+   
         <View style={styles.header}>
           <Text style={styles.title}>Request a Quote</Text>
           <Text style={styles.subtitle}>Tell us about your project and we'll provide a personalized quote</Text>
         </View>
 
-        {/* Form */}
+  
         <View style={styles.form}>
-          {/* Personal Information */}
+ 
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Personal Information</Text>
             
@@ -114,7 +114,7 @@ export default function QuoteScreen() {
             </View>
           </View>
 
-          {/* Service Type */}
+      
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Service Type *</Text>
             <View style={styles.optionsGrid}>
@@ -138,7 +138,7 @@ export default function QuoteScreen() {
             </View>
           </View>
 
-          {/* Budget */}
+ 
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Budget Range</Text>
             <View style={styles.optionsGrid}>
@@ -162,7 +162,6 @@ export default function QuoteScreen() {
             </View>
           </View>
 
-          {/* Timeline */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Timeline</Text>
             <View style={styles.inputContainer}>
@@ -176,7 +175,7 @@ export default function QuoteScreen() {
             </View>
           </View>
 
-          {/* Project Description */}
+       
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Project Description</Text>
             <View style={styles.inputContainer}>
@@ -194,14 +193,14 @@ export default function QuoteScreen() {
             </View>
           </View>
 
-          {/* Submit Button */}
+    
           <TouchableOpacity style={styles.submitButton} onPress={handleSubmit}>
             <Send size={20} color="#FAFAFA" />
             <Text style={styles.submitButtonText}>Submit Quote Request</Text>
           </TouchableOpacity>
         </View>
 
-        {/* Contact Info */}
+
         <View style={styles.contactInfo}>
           <Text style={styles.contactTitle}>Need Help?</Text>
           <Text style={styles.contactText}>

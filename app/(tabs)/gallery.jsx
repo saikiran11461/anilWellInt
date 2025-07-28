@@ -96,7 +96,7 @@ export default function GalleryScreen() {
                 onPress={() => handleCardPress(item)}
                 activeOpacity={0.9}
               >
-                {/* Card Image */}
+              
                 <View style={{ position: 'relative' }}>
                   <Image
                     source={{ uri: item.image }}
@@ -108,7 +108,7 @@ export default function GalleryScreen() {
                       resizeMode: 'cover',
                     }}
                   />
-                  {/* Dynamic Gradient Overlay for better text visibility */}
+          
                   <View
                     style={{
                       position: 'absolute',
@@ -173,7 +173,7 @@ export default function GalleryScreen() {
                       )}
                     </View>
                   </View>
-                  {/* Decorator floating badge */}
+             
                   <View style={{
                     position: 'absolute',
                     top: 14,

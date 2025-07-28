@@ -49,13 +49,13 @@ export default function ServicesScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
-        {/* Header */}
+      
         <View style={styles.header}>
           <Text style={styles.title}>Our Services</Text>
           <Text style={styles.subtitle}>Professional interior design services tailored to your needs</Text>
         </View>
 
-        {/* Services List */}
+  
         <View style={styles.servicesSection}>
           {services.map((service) => (
             <TouchableOpacity key={service.id} style={styles.serviceCard}>
@@ -99,7 +99,7 @@ export default function ServicesScreen() {
           ))}
         </View>
 
-        {/* Process Section */}
+      
         <View style={styles.processSection}>
           <Text style={styles.processTitle}>Our Design Process</Text>
           <Text style={styles.processSubtitle}>How we bring your vision to life</Text>
@@ -120,7 +120,7 @@ export default function ServicesScreen() {
           </View>
         </View>
 
-        {/* CTA Section */}
+        
         <View style={styles.ctaSection}>
           <Text style={styles.ctaTitle}>Ready to Get Started?</Text>
           <Text style={styles.ctaSubtitle}>Contact us today for a free consultation</Text>

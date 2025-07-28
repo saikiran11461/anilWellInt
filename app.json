@@ -4,7 +4,7 @@
     "slug": "client",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "../assets/images/anillogo.png",
+    "icon": "assets/images/anillogo.png",
     "scheme": "client",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,31 +13,38 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "../assets/images/anillogo.png",
+        "foregroundImage": "assets/images/anillogo.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.saikiran11471.client"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "../assets/images/anillogo.png"
+      "favicon": "assets/images/anillogo.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "../assets/images/anillogo.png",
+          "image": "assets/images/anillogo.png",
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
-          "width":"100%"
+          "width": "100%"
         }
       ],
       "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "46afa752-ea75-4e8d-92cb-5bc99e6f6678"
+      }
     }
   }
 }

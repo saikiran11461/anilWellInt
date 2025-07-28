@@ -72,14 +72,14 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
-        {/* Simple Modern Header */}
+  
         <View style={styles.simpleHeader}>
           <ImageBackground
             source={{ uri: 'https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=800' }}
             style={styles.headerBackground}
           >
             <View style={styles.headerOverlay}>
-              {/* Navigation */}
+        
               <View style={styles.headerNav}>
                 <Text style={styles.headerLogo}>ANIWELL</Text>
                 <TouchableOpacity style={styles.menuButton}>
@@ -89,7 +89,7 @@ export default function HomeScreen() {
                 </TouchableOpacity>
               </View>
 
-              {/* Hero Content */}
+
               <View style={styles.heroContent}>
                 <View style={styles.badge}>
                   <Text style={styles.badgeText}>✨ AWARD WINNING DESIGNS</Text>
@@ -139,7 +139,7 @@ export default function HomeScreen() {
           </ImageBackground>
         </View>
 
-        {/* Hero Video Section */}
+  
         <Animated.View entering={FadeInUp.delay(200)} style={styles.heroVideoSection}>
           <ImageBackground
             source={{ uri: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800' }}
@@ -159,7 +159,7 @@ export default function HomeScreen() {
           </ImageBackground>
         </Animated.View>
 
-        {/* Trending Styles */}
+
         <Animated.View entering={FadeInUp.delay(300)} style={styles.trendingSection}>
           <View style={styles.sectionHeader}>
             <View style={styles.sectionTitleContainer}>
@@ -189,7 +189,7 @@ export default function HomeScreen() {
           </ScrollView>
         </Animated.View>
 
-        {/* Premium Stats Grid */}
+
         <Animated.View entering={FadeInUp.delay(200)} style={styles.premiumStatsSection}>
           <Text style={styles.statsTitle}>Why Choose Aniwell</Text>
           <Text style={styles.statsSubtitle}>Trusted by hundreds of clients across the globe</Text>
@@ -213,7 +213,7 @@ export default function HomeScreen() {
           </View>
         </Animated.View>
 
-        {/* Featured Projects with Enhanced Design */}
+       
         <Animated.View entering={FadeInDown.delay(600)} style={styles.featuredSection}>
           <View style={styles.sectionHeader}>
             <Text style={styles.sectionTitle}>Featured Masterpieces</Text>
@@ -274,7 +274,7 @@ export default function HomeScreen() {
           </ScrollView>
         </Animated.View>
 
-        {/* Premium Decorators Section */}
+
         <Animated.View entering={SlideInLeft.delay(800)} style={styles.decoratorsSection}>
           <View style={styles.sectionHeader}>
             <Text style={styles.sectionTitle}>Master Designers</Text>
@@ -336,7 +336,7 @@ export default function HomeScreen() {
           </ScrollView>
         </Animated.View>
 
-        {/* Client Testimonials */}
+   
         <Animated.View entering={FadeInUp.delay(1000)} style={styles.testimonialsSection}>
           <Text style={styles.sectionTitle}>What Our Clients Say</Text>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.testimonialsScroll}>
@@ -364,7 +364,7 @@ export default function HomeScreen() {
           </ScrollView>
         </Animated.View>
 
-        {/* Premium CTA Section */}
+       
         <Animated.View entering={BounceIn.delay(1200)} style={styles.premiumCtaSection}>
           <LinearGradient
             colors={['#E85A00', '#FF8C42']}
@@ -384,7 +384,7 @@ export default function HomeScreen() {
         </Animated.View>
       </ScrollView>
 
-      {/* Enhanced Modal */}
+      
       <Modal
   animationType="slide"
   transparent={true}
